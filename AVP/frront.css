@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato;
+    list-style: none;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mc {
+    position: relative;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: #242424;
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.548);
+  }
+
+  .mc ul {
+    display: none; 
+    gap: 30px;
+    position: absolute;
+    top: 150px;
+    line-height: 2.5rem;
+  }
+
+  .mc ul li a {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+  }
+
+  .mc ul li a:hover{
+    border-bottom: 1px solid #a8741a;
+  }
+
+  .menu-bar i {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -60px;
+  }
+
+
+
+
+/* menu risponsive code */
+
+  @media (max-width: 1280px){
+    .mc ul {
+      position: absolute;
+      top: 68px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      background-color: #242424;
+      gap: 0;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.445);
+    }
+    .mc ul li{
+      margin-bottom: 5px;
+    }
+    .menu-bar i{
+      position: relative;
+      left: -560px;
+    }
+
+  }
+
+  .mc ul.show {
+    display: block;
+    max-height: 500px;
+  }
+  @media (max-width: 1141px){
+    .body{font-size: 0.938em;}
+  
+    .menu-bar i{
+      position: relative;
+      left: -530px;
+    }
+  }
+
+  @media (max-width: 1089px){
+    .body{font-size: 0.938em;}
+  
+    .menu-bar i{
+      position: relative;
+      left: -500px;
+    }
+  }
+
+  @media (max-width: 1018px){
+    .body{font-size: 0.938em;}
+
+    .menu-bar i{
+      position: relative;
+      left: -460px;
+    }
+}
+
+@media (max-width: 970px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -430px;
+  }
+}
+
+@media (max-width: 907px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -400px;
+  }
+}
+
+@media (max-width: 851px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -370px;
+  }
+}
+
+@media (max-width: 777px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -330px;
+  }
+}
+
+@media (max-width: 709px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -300px;
+  }
+}
+
+@media (max-width: 645px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -270px;
+  }
+}
+
+@media (max-width: 579px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -240px;
+  }
+}
+
+@media (max-width: 514px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -210px;
+  }
+}
+
+@media (max-width: 453px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -180px;
+  }
+}
+
+@media (max-width: 390px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -160px;
+  }
+}
+
+@media (max-width: 349px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -130px;
+  }
+}
+
+@media (max-width: 296px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -100px;
+  }
+}
+
+@media (max-width: 242px){
+  .body{font-size: 0.938em;}
+
+  .menu-bar i{
+    position: relative;
+    left: -80px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  body {font-size: 0.938em;}
+}
+
+
+
+
+
+/* this is AVP-LOGO  */
+
+.avp-logo img{
+  position: relative;
+  width: 70px;
+  top: -9px;
+}
+
+
+
+/* slider code with image and text */
+
+.swm{
+  width: 100%;
+  height: 400px;
+  position: relative;
+  box-shadow: 0px 0px 3px grey;
+  overflow: hidden;
+}
+
+.slide{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s linear;
+}
+
+.nav{
+  text-align: center;
+  margin-top: 15px;
+  
+}
+
+.nav i{
+  font-size: 10px;
+  padding: 20px;
+  background-color: rgba(116, 110, 110, 0.404);
+  outline: none;
+  border-radius: 30px;
+  color: rgba(150, 141, 141, 0.87);
+  transition: all 0.3s linear;
+}
+
+.nav i:hover{
+ background-color:#a8741a;
+ color: white;
+ scale: 1.1;
+}
+
+
+.prev{
+  position: relative;
+  top: -260px;
+  left: -610px;
+}
+
+.next{
+  position: relative;
+  top: -312px;
+  right: -610px;
+}
+
+
+/* user icon */
+
+.user-icon i{
+position: relative;
+top: -80px;
+color: white;
+right: -450px;
+cursor: pointer;
+}
+
+.text-1{
+  position: absolute;
+  color: white;
+}
+
+.text-2{
+  position: absolute;
+  color: white;
+}
+
+.text-3{
+  position: absolute;
+  color: white;
+}

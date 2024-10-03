@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="frront.css">  <!-- css link -->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">          <!-- font link -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />                <!-- icon link -->
+
+
+    <title>AVP-collection</title>
+
+</head>
+<body>
+    <div class="mc" >   <!-- mc means main-container -->
+
+      <div class="avp-logo">
+         <img src="avp-logo/avp-removebg-preview.png">
+      </div>
+
+             <div class="menu-bar">    <!-- menu bar -->
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+              </div>
+
+                <ul id="menu">
+                   <li><a href="">home</a></li>
+                   <li><a href="">cataloge</a></li>
+                   <li><a href="">collection</a></li>
+                   <li><a href="">product pages</a></li>
+                   <li><a href="">pages</a></li>
+                </ul>
+                <div class="user-icon">
+                  <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+
+    </div>
+
+    <!-- slider with image and text -->
+
+    <div class="swm">
+      <div>
+     <img src="main-slider-images/1.jpg" class="slide">
+     <div class="text-1">
+     <h1>Exclusive Offer -10% Off This Week</h1>
+     <h2>Raymond  Weil</h2>
+     <p> Raymond Weil’s emblematic collection, nabucco, makes a strong comeback this year.</p>
+     <p>Starting at  <span>$2.199.00</span> consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.</p>
+   </div>
+</div>
+
+
+   <div>
+      <img src="main-slider-images/2.jpg" class="slide">
+      <div class="text-2">
+         <h1>Exclusive Offer -40% Off This Week</h1>
+         <h2>Breguet Watches</h2>
+         <p> Breguet, “Souscription No. 34/300”. Made in a limited edition of 300 sets in the early 1990's.</p>
+         <p>Starting at  <span>$2.199.00</span></p>
+      </div>
+   </div>
+
+
+   <div>
+      <img src="main-slider-images/3.jpg" class="slide">
+       <div class="text-3">
+         <h1>Exclusive Offer -20% Off This Week</h1>
+         <h2>U-Boat Classico</h2>
+         <p> U-Boat watches are a lot like classic American Muscle cars - expect for the American part that is.</p>
+         <p>Starting at  <span>$1.499.00</span></p>
+      </div>
+   </div>
+    </div>
+
+
+   
+    <!-- prev and next button -->
+
+<div class="nav">
+   <div class="prev" onclick="goPrev()">
+      <i class="fa-solid fa-chevron-left"></i>
+   </div>
+
+   <div class="next" onclick="goNext()">
+      <i class="fa-solid fa-chevron-right"></i>
+   </div>
+</div>  
+
+
+    <!-- javascript code in menu bar -->
+
+    <script>
+       let menulist = document.getElementById('menu');
+
+       function toggleMenu() {
+      menulist.classList.toggle('show'); 
+    }
+    </script>
+
+    <p>heelo</p>
+
+    <script src="slide.js"></script>
+</body>
+</html>

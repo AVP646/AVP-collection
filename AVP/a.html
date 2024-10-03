@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="frront.css">  <!-- css link -->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">          <!-- font link -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />                <!-- icon link -->
+
+
+    <title>AVP-collection</title>
+
+</head>
+<body>
+    <div class="mc" >
+
+
+             <div class="menu-bar">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+              </div>
+
+                <ul id="menu">
+                   <li><a href="">home</a></li>
+                   <li><a href="">cataloge</a></li>
+                   <li><a href="">collection</a></li>
+                   <li><a href="">product pages</a></li>
+                   <li><a href="">pages</a></li>
+                </ul>
+
+    </div>
+
+
+    <script>
+       let menulist = document.getElementById('menu');
+
+       function toggleMenu() {
+      menulist.classList.toggle('show'); 
+    }
+    </script>
+</body>
