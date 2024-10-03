@@ -1,40 +1,90 @@
-const slides = document.querySelectorAll(".slide");
 
-var counter = 0;
+let left = document.querySelector(".left");
+let right = document.querySelector(".right");
+let slider = document.querySelector(".slider");
+let image = document.querySelectorAll(".image");
 
-slides.forEach(
-    (slide,index) =>{
-        slide.style.left = `${index * 100}%`
+let no = 1;
+
+right.addEventListener("click", () => {
+    if (no < image.length) {
+        slider.style.transform = `translateX(-${no * 1264}px)`;
+        no++;
     }
-)
+    else {
+        slider.style.transform = `translateX(0px)`;
+        no = 1;
+    }
 
-const goPrev = () =>{
-   if(counter == 0){
-    counter = slides.length - 1;
-    slideImage();
-   }else{
-    counter--;
-    slideImage();
-   }
-}
-
-const goNext = () =>{
-    if(counter == slides.length - 1){
-        counter = 0;
-        slideImage();
-       }else{
-        counter++;
-        slideImage();
-       }
-}
+})
 
 
+left.addEventListener("click", () => {
+    if (no > 1) {
+        slider.style.transform = `translateX(-${(no - 2) * 1264}px)`;
+        no--;
+    }
+    else {
+        slider.style.transform = `translateX(-${(image.length - 1) * 1264}px)`;
+        no = image.length;
+    }
 
-const slideImage = () =>{
-    slides.forEach(
-        (slide) =>{
-            slide.style.transform = `translateX(-${counter * 100}%)`
-        }
-    )
-}
+})
 
+// here is the end of image slider function code
+
+let info = document.querySelector(".info");
+let info2 = document.querySelector(".info2");
+let info3 = document.querySelector(".info3");
+let info4 = document.querySelector(".info4");
+
+
+let infoNo = 0;
+
+right.addEventListener('click', () => {
+    if (infoNo == 0) {
+        info.style.opacity = 0;
+        info2.style.opacity = 1;
+        infoNo++;
+    }
+    else if (infoNo == 1) {
+        info2.style.opacity = 0;
+        info3.style.opacity = 1;
+        infoNo++
+    }
+    else if (infoNo == 2) {
+        info3.style.opacity = 0;
+        info4.style.opacity = 1;
+        infoNo++;
+    }
+    else {
+        info4.style.opacity = 0;
+        info.style.opacity = 1;
+        infoNo = 0;
+    }
+})
+
+
+
+left.addEventListener('click', () => {
+    if (infoNo == 0) {
+        info.style.opacity = 0;
+        info4.style.opacity = 1;
+        infoNo = 3;
+    }
+    else if (infoNo == 3) {
+        info4.style.opacity = 0;
+        info3.style.opacity = 1;
+        infoNo--;
+    }
+    else if (infoNo == 2) {
+        info3.style.opacity = 0;
+        info2.style.opacity = 1;
+        infoNo--;
+    }
+    else {
+        info2.style.opacity = 0;
+        info.style.opacity = 1;
+        infoNo = 0;
+    }
+})

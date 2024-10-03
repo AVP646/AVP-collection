@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="frront.css">  <!-- css link -->
-
-   <link rel="preconnect" href="https://fonts.googleapis.com">          <!-- font link -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
- crossorigin="anonymous" referrerpolicy="no-referrer" />                <!-- icon link -->
-
-
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">          <!-- font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />                <!-- icon link -->
+    
+    
+    <link rel="stylesheet" href="frront.css">  <!-- css link -->
     <title>AVP-collection</title>
 
 </head>
 <body>
-   <p>hello pakaj</p>
     <div class="mc" >   <!-- mc means main-container -->
 
       <div class="avp-logo">
@@ -42,41 +41,62 @@
     </div>
 
     <!-- slider with image and text -->
-
-    <div class="swm">
-      <div>
-     <img src="main-slider-images/1.jpg" class="slide">
-     <div class="text-1">
-     <h1>Exclusive Offer -10% Off This Week</h1>
-     <h2>Raymond  Weil</h2>
-     <p> Raymond Weil’s emblematic collection, nabucco, makes a strong comeback this year.</p>
-     <p>Starting at  <span>$2.199.00</span> consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.</p>
-   </div>
-</div>
+<!-- this is info of slider  -->
+    <div class="info">
+      <pre id="info">
+          <p>Duration of Film</p>  <p>7.5  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>   2:20 hour long  Action/Adventure/Fantacy</p> <h2>Jurassic World: Fallen Kingdom</h2><p>After a volcano eruption proves to be a threat for the
+dinosaurs,Owen and Claire reach the defunct Jurassic
+World,a theme park, to save the animals from extinction.
+          </p></pre> <button id="watch"><i class="fa-solid fa-play" style="color: #ffffff;"></i> Watch</button>
+      <button><i class="fa-solid fa-plus" style="color: #ffffff;"></i> Add List</button>
+  </div>
 
 
-   <div>
-      <img src="main-slider-images/2.jpg" class="slide">
-      <div class="text-2">
-         <h1>Exclusive Offer -40% Off This Week</h1>
-         <h2>Breguet Watches</h2>
-         <p> Breguet, “Souscription No. 34/300”. Made in a limited edition of 300 sets in the early 1990's.</p>
-         <p>Starting at  <span>$2.199.00</span></p>
+  <div class="info2">
+      <pre id="info">
+          <p>Duration of Film</p>  <p>6.6  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>   1:52 hour long  Action/sci-fi</p> <h2>Venom</h2><p>While trying to take down Carlton, the CEO of Life Foundation, 
+Eddie, a journalist, investigates experiments of human trials.
+Unwittingly, he gets merged with a symbiotic alien with lethal abilities.
+
+          </p></pre> <button id="watch"><i class="fa-solid fa-play" style="color: #ffffff;"></i> Watch</button>
+      <button><i class="fa-solid fa-plus" style="color: #ffffff;"></i> Add List</button>
+  </div>
+
+
+  <div class="info3">
+      <pre id="info">
+          <p>Duration of Film</p>  <p>5.7  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>   1:53 hour long  Action/sci-fi</p> <h2>The Meg</h2><p>When the members of an underwater research facility are under 
+threat owing to a 75-foot prehistoric shark, Jonas Taylor,
+a deep-sea diver, is hired to save them.
+
+          </p></pre> <button id="watch"><i class="fa-solid fa-play" style="color: #ffffff;"></i> Watch</button>
+      <button><i class="fa-solid fa-plus" style="color: #ffffff;"></i> Add List</button>
+  </div>
+  <div class="info4">
+      <pre id="info">
+          <p>Duration of Film</p>  <p>9  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>   2:32 hour long  Action/Crime</p> <h2>The Dark Knight</h2><p>Batman has a new foe, the Joker,
+who is an accomplished criminal hell-bent on decimating Gotham City.
+Together with Gordon and Harvey Dent,
+Batman struggles to thwart the Joker before it is too late.
+
+          </p></pre> <button id="watch"><i class="fa-solid fa-play" style="color: #ffffff;"></i> Watch</button>
+      <button><i class="fa-solid fa-plus" style="color: #ffffff;"></i> Add List</button>
+  </div>
+
+<!-- its container of slider  -->
+    <div class="container">
+      <i class="fa-solid fa-arrow-left arow left"></i>
+      <div class="frame">
+          <div class="slider">
+              <img src="main-slider-images/1.jpg" class="image">
+              <img src="main-slider-images/2.jpg" class="image ">
+              <img src="main-slider-images/3.jpg" class="image ">
+              <img src="images/image4.jpg" class="image ">
+          </div>
       </div>
-   </div>
+      <i class="fa-solid fa-arrow-right arow right"></i>
 
-
-   <div>
-      <img src="main-slider-images/3.jpg" class="slide">
-       <div class="text-3">
-         <h1>Exclusive Offer -20% Off This Week</h1>
-         <h2>U-Boat Classico</h2>
-         <p> U-Boat watches are a lot like classic American Muscle cars - expect for the American part that is.</p>
-         <p>Starting at  <span>$1.499.00</span></p>
-      </div>
-   </div>
-    </div>
-
+  </div>
 
    
     <!-- prev and next button -->
@@ -102,8 +122,7 @@
     }
     </script>
 
-    <p>heelo</p>
-
     <script src="slide.js"></script>
+
 </body>
 </html>
