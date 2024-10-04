@@ -8,7 +8,7 @@ let no = 1;
 
 right.addEventListener("click", () => {
     if (no < image.length) {
-        slider.style.transform = `translateX(-${no * 1264}px)`;
+        slider.style.transform = `translateX(-${no * 1250}px)`;
         no++;
     }
     else {
