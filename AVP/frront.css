@@ -65,11 +65,6 @@
       right: 0;
       flex-direction: column;
       text-align: center;
-<<<<<<< HEAD
-      background-color:rgba( 36, 36, 36,0.3);
-=======
-      background-color: rgba(36,36,36,0.3);
->>>>>>> 1a23c116c47b172581fb64d29b0625136ec391d0
       backdrop-filter: blur(10px);
       gap: 0;
       overflow: hidden;
