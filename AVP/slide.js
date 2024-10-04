@@ -88,3 +88,4 @@ left.addEventListener('click', () => {
         infoNo = 0;
     }
 })
+

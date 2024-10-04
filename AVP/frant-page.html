@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">          <!-- font link -->
+
+     <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">         
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />                <!-- icon link -->
     
-    
-    <link rel="stylesheet" href="frront.css">  <!-- css link -->
+    <!-- css link -->
+    <link rel="stylesheet" href="frront.css">  
     <title>AVP-collection</title>
-
+    
 </head>
 <body>
-    <div class="mc" >   <!-- mc means main-container -->
+    
+    <!-- mc means main-container -->
+    <div class="mc" >   
 
       <div class="avp-logo">
          <img src="avp-logo/avp-removebg-preview.png">
       </div>
 
-             <div class="menu-bar">    <!-- menu bar -->
+
+        <!-- menu bar -->
+             <div class="menu-bar">
                 <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
               </div>
 
@@ -72,6 +77,7 @@ a deep-sea diver, is hired to save them.
           </p></pre> <button id="watch"><i class="fa-solid fa-play" style="color: #ffffff;"></i> Watch</button>
       <button><i class="fa-solid fa-plus" style="color: #ffffff;"></i> Add List</button>
   </div>
+  
   <div class="info4">
       <pre id="info">
           <p>Duration of Film</p>  <p>9  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>   2:32 hour long  Action/Crime</p> <h2>The Dark Knight</h2><p>Batman has a new foe, the Joker,
@@ -95,22 +101,38 @@ Batman struggles to thwart the Joker before it is too late.
           </div>
       </div>
       <i class="fa-solid fa-arrow-right arow right"></i>
-
   </div>
 
-   
-    <!-- prev and next button -->
+  <!-- 3 image box -->
 
-<div class="nav">
-   <div class="prev" onclick="goPrev()">
-      <i class="fa-solid fa-chevron-left"></i>
-   </div>
+  <div class="box">
+    <div class="box-1">
+        <img src="main-slider-images/box-1.avif" class="box-image">
+        <span class="box-text">
+            <span class="text1">Design Creative</span>
+            <span class="text2">Modern and Clean</span>
+            <span class="text3">From  $60.99 - Sale 20%</span>
+        </span>
+    </div>
 
-   <div class="next" onclick="goNext()">
-      <i class="fa-solid fa-chevron-right"></i>
-   </div>
-</div>  
-
+    <div class="box-2">
+        <img src="main-slider-images/box-2.jpg" class="box-image">
+        <span class="box-text">
+            <span class="text1">Bestselling Products</span>
+            <span class="text2">Jewelry and Diamonds</span>
+            <span class="text3">Only  from  $89.00</span>
+        </span>
+    </div>
+    
+    <div class="box-3">
+        <img src="main-slider-images/box-3.avif" class="box-image">
+        <span class="box-text">
+            <span class="text1">Onsale Products</span>
+            <span class="text2">Perfect Rider Watch</span>
+            <span class="text3">Selling Off  30%</span>
+        </span>
+    </div>
+  </div>
 
     <!-- javascript code in menu bar -->
 
