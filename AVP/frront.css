@@ -238,10 +238,44 @@ body {
   height:70%;
   width:350px;
   background:url(main-slider-images/box-2.jpg);
+  border-radius: 20px;
  }
 .box-1{
   background: url(main-slider-images/box-1.avif);
 }
 .box-3{
   background: url(main-slider-images/box-3.avif);
+}
+
+/* its collection styling */
+.head-coll{
+  height:30px;
+  width:100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.548);
+  padding-top: 20px;
+}
+
+.collection-conn{
+  height:150px;
+  width:100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-con{
+  height:100px;
+  width:100px;
+  border:1px solid black;
+  border-radius: 50%;
+  margin:0 10px 0 10px;
+}
+
+.col-con:hover{
+  width:110px;
+  height:110px;
+  
 }
