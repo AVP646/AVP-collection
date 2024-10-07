@@ -19,35 +19,26 @@
 </head>
 <body>
     
-    <!-- mc means main-container -->
+    <!-- mc means main-container  navbar-->
     <div class="mc" >   
-
-      <div class="avp-logo">
-         <img src="avp-logo/avp-removebg-preview.png">
-      </div>
-
-
         <!-- menu bar -->
-             <div class="menu-bar">
-                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-              </div>
-
-                <ul id="menu">
-                   <li><a href="">home</a></li>
-                   <li><a href="">cataloge</a></li>
-                   <li><a href="">collection</a></li>
-                   <li><a href="">product pages</a></li>
-                   <li><a href="">pages</a></li>
-                </ul>
-                <div class="user-icon">
-                  <a href="login.html"><i class="fa-solid fa-user"></i></a>
-                </div>
-
+        <i class="fa-solid fa-bars menu"></i>
+        <img src="avp-logo/avp-removebg-preview.png" id="logo">
+         <a href="login.html"><i class="fa-solid fa-user login-i"></i></a>                
     </div>
-
+    <div class="navbar-slider">
+        <ul id="menu">
+            <li><a href="#">home</a></li>
+            <li><a href="#">cataloge</a></li>
+            <li><a href="#">collection</a></li>
+            <li><a href="#">product pages</a></li>
+            <li><a href="#">pages</a></li>
+         </ul>    
+      
+    </div>
     <!-- slider with image and text -->
 <!-- this is info of slider  -->
-    <div class="info">
+     <div class="info">
       <pre id="info">
           <p>Duration of Film</p>  <p>7.5  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>   2:20 hour long  Action/Adventure/Fantacy</p> <h2>Jurassic World: Fallen Kingdom</h2><p>After a volcano eruption proves to be a threat for the
 dinosaurs,Owen and Claire reach the defunct Jurassic
@@ -101,10 +92,10 @@ Batman struggles to thwart the Joker before it is too late.
           </div>
       </div>
       <i class="fa-solid fa-arrow-right arow right"></i>
-  </div>
+  </div> 
 
   <!-- 3 image box -->
-
+<!-- 
   <div class="box">
     <div class="box-1">
         <img src="main-slider-images/box-1.avif" class="box-image">
@@ -132,17 +123,27 @@ Batman struggles to thwart the Joker before it is too late.
             <span class="text3">Selling Off  30%</span>
         </span>
     </div>
-  </div>
+  </div> -->
 
     <!-- javascript code in menu bar -->
 
     <script>
-       let menulist = document.getElementById('menu');
+       let menulist = document.querySelector('.menu');
+       let navbar_slider = document.querySelector('.navbar-slider');
 
-       function toggleMenu() {
-      menulist.classList.toggle('show'); 
-    }
-    </script>
+       let sno = 1;
+
+       menulist.addEventListener("click" ,() => {
+        if(sno == 1){
+            navbar_slider.style.opacity = 1;
+            sno++;
+        }else{
+            navbar_slider.style.opacity = 0; 
+            sno = 1;
+        }
+
+       })
+    </script> 
 
     <script src="slide.js"></script>
 

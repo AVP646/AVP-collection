@@ -25,7 +25,6 @@ body{
     width:100vw;
     background: #242424;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -33,6 +32,7 @@ body{
     height:80%;
     width:40%;
     border:1px solid rgba(167, 166, 166,0.5); 
+    margin-top: 100px;
 }
 .con2 a{
     text-decoration: none;
@@ -107,58 +107,105 @@ button:hover{
 }
 
 /* creating responsive design  */
-
-@media only  screen and (max-width:1030px) {
-    
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    body{
-        overflow: hidden;
-    }
-    .container{
-        height:120vh;
-        width:110vw;
-        background-color: black;
-    }
+@media (max-width: 1024px){
     .con2{
-        height:70%;
-        width: 70%;
-        display: flex;
-        /* align-items: center; */
+        height:60%;
+        width:50%;
     }
-
     .input{
-        width:290px;
+        width:400px;
+        height:40px;
     }
-
     #head{
-        font-size: 1.7em;
-        /* margin: 10px 0 50px 10px; */
+        font-size: 40px;
     }
-    
-    #login{
-        position: absolute;
-        bottom: 100px;
-        left:70px;
+    label{
+        font-size: 20px;
     }
 }
-
-
-
-
-@media only  screen and (max-width:390px){
-    #login{
-        position: absolute;
-        top:770px;
+  @media (max-width: 920px){
+    .con2{
+        height:60%;
     }
     .input{
-        width: 280px;
+        width:350px;
     }
 }
 
+@media (max-width: 814px){
+  .con2{
+    width:60%;
+  }
+  .input{
+    width:350px;
+  }
+}
+
+@media (max-width: 681px){
+  .con2{
+    width:70%;
+  }
+}
+
+@media (max-width: 583px){
+  .con2{
+    width:90%;
+  }
+}
+
+@media (max-width: 459px){
+  .con2{
+    width:95%;
+  }
+  .input{
+    width: 300px;
+  }
+}
+
+
+@media (max-width: 430px){
+  #head{
+    font-size: 25px;
+  }
+  .con2{
+    height:60%;
+  }
+}
+
+
+@media (max-width: 393px){
+  .con2{
+    width:95%;
+    height:60%;
+  }
+  .input{
+    width:250px;
+  }
+}
+
+@media (max-width: 337px){
+.input{
+    width:220px;
+}  
+#SignUp{
+    width:100px;
+}
+#login{
+    width:100px;
+}
+#head{
+    font-size: 20px;
+}
+}
+
+@media (max-width: 289px){
+  .con2{
+    height: 60%;
+  }
+  .input{
+    width:190px;
+  }
+}
 /* its completed */
 
     </style>

@@ -98,62 +98,104 @@ button:hover{
 
 
 /* now creating responsive  */
-
-@media only  screen and (max-width:1030px) {
-    
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    body{
-        overflow: hidden;
-    }
-    .container{
-        height:120vh;
-        width:110vw;
-        background-color: black;
-    }
+@media (max-width: 1024px){
     .con2{
-        height:40%;
-        width: 70%;
-        display: flex;
-        /* align-items: center; */
+        height:50%;
+        width:50%;
     }
-
     .input{
-        width:290px;
+        width:400px;
+        height:40px;
     }
-
     #head{
-        font-size: 1.7em;
-        /* margin: 10px 0 50px 10px; */
+        font-size: 40px;
     }
-    
-    #SignUp{
-        position: absolute;
-        bottom: 200px;
-        left:70px;
+    label{
+        font-size: 20px;
     }
 }
-
-
-
-
-@media only  screen and (max-width:390px){
-    #SignUp{
-        position: absolute;
-        top:660px;
+  @media (max-width: 1018px){
+    .con2{
+        height:450px;
     }
     .input{
-        width: 280px;
+        width:350px;
     }
-    .con2{
-        height:45%;
-        width: 70%;
-     }
 }
-    </style>
+
+@media (max-width: 814px){
+  .con2{
+    width:60%;
+  }
+  .input{
+    width:300px;
+  }
+}
+
+@media (max-width: 681px){
+  .con2{
+    width:70%;
+  }
+}
+
+@media (max-width: 583px){
+  .con2{
+    width:90%;
+  }
+}
+
+@media (max-width: 459px){
+  .con2{
+    width:95%;
+  }
+  .input{
+    width:250px;
+  }
+}
+
+
+@media (max-width: 430px){
+  #head{
+    font-size: 25px;
+  }
+}
+
+
+@media (max-width: 393px){
+  .con2{
+    width:95%;
+  }
+  .input{
+    width:250px;
+  }
+}
+
+@media (max-width: 337px){
+.input{
+    width:220px;
+}  
+#SignUp{
+    width:100px;
+}
+#login{
+    width:100px;
+}
+#head{
+    font-size: 20px;
+}
+}
+
+@media (max-width: 289px){
+  .con2{
+    height:400px;
+  }
+  .input{
+    width:190px;
+  }
+}
+
+
+  </style>
 </head>
 <body>
     <div class="container">
