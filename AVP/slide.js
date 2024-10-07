@@ -89,3 +89,21 @@ left.addEventListener('click', () => {
     }
 })
 
+
+
+// navigation bar code
+
+let menulist = document.querySelector('.menu');
+let navbar_slider = document.querySelector('.navbar-slider');
+
+let sno = 1;
+
+menulist.addEventListener("click" ,() => {
+ if(sno == 1){
+     navbar_slider.style.opacity = 1;
+     sno++;
+ }else{
+     navbar_slider.style.opacity = 0; 
+     sno = 1;
+ }
+})
