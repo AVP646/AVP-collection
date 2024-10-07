@@ -1,9 +1,30 @@
 
+// this is navabar slider script 
+
+let menulist = document.querySelector('.menu');
+let navbar_slider = document.querySelector('.navbar-slider');
+
+let sno = 1;
+
+menulist.addEventListener("click", () => {
+    if (sno == 1) {
+        navbar_slider.style.opacity = 1;
+        sno++;
+    } else {
+        navbar_slider.style.opacity = 0;
+        sno = 1;
+    }
+
+})
+
+// here its end 
+
+// this is image slider 
+
 let left = document.querySelector(".left");
 let right = document.querySelector(".right");
 let slider = document.querySelector(".slider");
 let image = document.querySelectorAll(".image");
-
 let no = 1;
 
 right.addEventListener("click", () => {
@@ -88,4 +109,6 @@ left.addEventListener('click', () => {
         infoNo = 0;
     }
 })
+
+
 

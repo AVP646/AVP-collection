@@ -8,11 +8,9 @@
   list-style: none;
 }
 
-html,
 body {
-  width: 100%;
-  height: 100%;
   background-color: #3a3939;
+  overflow-x: hidden;
 }
 
 
@@ -45,12 +43,14 @@ body {
 .navbar-slider {
   height: 300px;
   width: 100vw;
-  background-color:rgba(239, 40, 40, 0.5);
+  background-color:rgba(36,36,36, 0.5);
   text-align: center;
   backdrop-filter: blur(10px);
   transition: all .3s linear;
   opacity: 0;
-  z-index: 999;
+  position: absolute;
+  top:70px;
+  z-index: 12;
 }
 
 #menu li a {
@@ -59,7 +59,6 @@ body {
   color: white;
   text-transform: capitalize;
   word-spacing: 2px;
-
 }
 
 #menu li{
@@ -71,99 +70,16 @@ body {
   border-bottom: 1px solid gold;
 }
 
-
-/* slider code with image and text */
-
-.container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-  background-color: red;
-}
-
-.frame {
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-
-}
-
-.slider {
-  display: flex;
-  transition: all 1s ease;
-  border-bottom: 4px solid rgba(0, 0, 0, 0.712);
-}
-
-.image {
-  width: 100%;
-  object-fit: contain;
-}
-
-.arow {
-  color: white;
-  font-size: 1.5em;
-  cursor: pointer;
-  position: absolute;
-  border: 1px solid rgba(29, 28, 28, 0.151);
-  padding: 10px;
-  border-radius: 50%;
-  background-color: red;
-  /* border-radius: 10px; */
-
-}
-
-.left {
-  position: relatives;
-  left: 50px;
-  z-index: 1;
-  top: 230px;
-
-}
-
-.right {
-  right: 50px;
-  position: relatives;
-  top: 230px;
-}
-
-
-/* user icon */
-
-.user-icon i {
-  position: relative;
-  top: -80px;
-  color: white;
-  right: -450px;
-  cursor: pointer;
-}
-
-.text-1 {
-  position: absolute;
-  color: white;
-}
-
-.text-2 {
-  position: absolute;
-  color: white;
-}
-
-.text-3 {
-  position: absolute;
-  color: white;
-}
-
-
 /* now creating image slider images movie information */
 
 .info {
   height: 300px;
   width: 400px;
+  z-index: 9;
+  transition: all 1s;
   position: absolute;
   top: 150px;
   left: 170px;
-  z-index: 9;
-  transition: all 1s;
 }
 
 #info {
@@ -195,7 +111,6 @@ body {
   z-index: 9;
   transition: all 1s;
   opacity: 0;
-
 }
 
 .info2 button {
@@ -219,7 +134,6 @@ body {
   z-index: 9;
   transition: all 1s;
   opacity: 0;
-
 }
 
 .info3 button {
@@ -256,8 +170,78 @@ body {
 }
 
 
+
+/* slider code with image and text */
+
+.container {
+  width: 100vw;
+  height: 40%;
+}
+
+.frame {
+  width: 100%;
+  height:100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: all 1s ease;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.712);
+}
+
+.image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.arow {
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  position: absolute;
+  border: 1px solid rgba(29, 28, 28, 0.151);
+  padding: 10px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.left {
+  position: relatives;
+  left: 50px;
+  z-index: 99;
+  top: 230px;
+}
+
+.right {
+  right: 50px;
+  position: relatives;
+  top: 230px;
+  z-index: 12;
+}
+
+
+
 /* here is completed of image slider styling */
 
+/* box images */
 
-/* image-box */
-/* s
+.box{
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+ .box-con{
+  height:70%;
+  width:350px;
+  background:url(main-slider-images/box-2.jpg);
+ }
+.box-1{
+  background: url(main-slider-images/box-1.avif);
+}
+.box-3{
+  background: url(main-slider-images/box-3.avif);
+}
