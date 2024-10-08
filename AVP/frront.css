@@ -370,6 +370,7 @@ body {
   
 }
 
+/* 3 catagory box with 1 horizontal border */
 
 .element-line {
   width: 80%; 
@@ -388,33 +389,41 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 28%;
+  left: 30%;
   top: -28px;
-  gap: 20px;
 }
 
 .sp-1,.sp-2,.sp-3{
-   border: 1px solid grey;
+  border: 1px solid rgba(128, 128, 128, 0.329);
   padding: 15px 25px 15px 25px;
   background-color: #3a3939;
   text-align: center;
   color: white;
   font-size: larger;
+  transition: all 0.2s linear;
+}
+.sp-1.changeColor{
+  border: 3px solid #a8741a;
+  color: #a8741a;
+  font-size: 25px;
+}
+.sp-2.changeColor{
+  border: 3px solid #a8741a;
+  color: #a8741a;
+  font-size: 25px;
+}
+
+.sp-3.changeColor{
+  border: 3px solid #a8741a;
+  color: #a8741a;
+  font-size: 25px;
+}
+
+span1,span2,span3{
   transition: all 0.3s linear;
 }
-
-span1:focus{
-  border:1px solid #a8741a;
-}
-
-span1:hover{
+span1:hover ,span2:hover ,span3:hover{
   color: #a8741a;
 }
 
-span2:hover{
-  color: #a8741a;
-}
 
-span3:hover{
-  color: #a8741a;
-}
