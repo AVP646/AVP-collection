@@ -118,9 +118,9 @@ const box3 = document.querySelector('.sp-3');
 
 box1.addEventListener('click', () => {
     if (box1.classList.contains('changeColor')) {
-        box1.classList.remove('changeColor');
-        box2.classList.add('changeColor');
-        box3.classList.add('changeColor');
+        box1.classList.add('changeColor');
+        box2.classList.remove('changeColor');
+        box3.classList.remove('changeColor');
     } else {
         box1.classList.add('changeColor');
         box2.classList.remove('changeColor');
@@ -130,9 +130,9 @@ box1.addEventListener('click', () => {
 
 box2.addEventListener('click', () => {
     if (box2.classList.contains('changeColor')) {
-        box2.classList.remove('changeColor');
-        box1.classList.add('changeColor');
-        box3.classList.add('changeColor');
+        box2.classList.add('changeColor');
+        box1.classList.remove('changeColor');
+        box3.classList.remove('changeColor');
     } else {
         box2.classList.add('changeColor');
         box1.classList.remove('changeColor');
@@ -142,9 +142,9 @@ box2.addEventListener('click', () => {
 
 box3.addEventListener('click', () => {
     if (box3.classList.contains('changeColor')) {
-        box3.classList.remove('changeColor');
-        box1.classList.add('changeColor');
-        box2.classList.add('changeColor');
+        box3.classList.add('changeColor');
+        box1.classList.remove('changeColor');
+        box2.classList.remove('changeColor');
     } else {
         box3.classList.add('changeColor');
         box1.classList.remove('changeColor');

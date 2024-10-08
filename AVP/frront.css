@@ -15,6 +15,9 @@ body {
   background-color: #3a3939;
 }
 
+body{
+  overflow-x: hidden;
+}
 
 
 .mc {
@@ -34,13 +37,13 @@ body {
 .menu {
   font-size: 25px;
   color: white;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .login-i {
   color: white;
   font-size: 25px;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 .navbar-slider {
@@ -90,7 +93,9 @@ body {
   height: auto;
   overflow: hidden;
   position: absolute;
-  top: 70px;border-bottom: 4px solid rgba(0, 0, 0, 0.712);
+  top: 70px;
+  left: 16px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.712);
 }
 
 .slider {
@@ -126,7 +131,7 @@ body {
 }
 
 .right {
-  right: 50px;
+  right: 25px;
   position: absolute;
   top: 280px;
 }
@@ -263,15 +268,12 @@ body {
 /* this is a image box */
 
 .box{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: hidden;
-  margin-top: 60px;
+ justify-content: center;
+  position: relative;
+  left: 20px;
+  margin-top: 90px;
 }
  
 .box-image{
@@ -375,11 +377,11 @@ body {
 .element-line {
   width: 80%; 
   border: 2px solid #57565662; 
-  margin-top: 80px;
   border-radius: 800%;
   display: flex;
   position: relative;
   left: 10%;
+  top: 150px;
 }
 
 .ct{
@@ -390,7 +392,8 @@ body {
   align-items: center;
   position: relative;
   left: 30%;
-  top: -28px;
+  top: 120px;
+  overflow: hidden;
 }
 
 .sp-1,.sp-2,.sp-3{
@@ -401,7 +404,10 @@ body {
   color: white;
   font-size: larger;
   transition: all 0.2s linear;
+  cursor: pointer;
 }
+
+
 .sp-1.changeColor{
   border: 3px solid #a8741a;
   color: #a8741a;
@@ -427,3 +433,16 @@ span1:hover ,span2:hover ,span3:hover{
 }
 
 
+
+/* this is a items code */
+
+.item-box{
+  width: 100vw;
+  max-width: 65vw;
+  height: 380px;
+  /* border: 1px solid red; */
+  margin-top: 140px;
+  overflow: hidden;
+  position: relative;
+  left: 18%;
+}
