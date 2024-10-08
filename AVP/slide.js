@@ -107,3 +107,6 @@ menulist.addEventListener("click" ,() => {
      sno = 1;
  }
 })
+
+
+// ct text box

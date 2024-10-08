@@ -90,13 +90,13 @@ body {
   height: auto;
   overflow: hidden;
   position: absolute;
-  top: 70px;
+  top: 70px;border-bottom: 4px solid rgba(0, 0, 0, 0.712);
 }
 
 .slider {
   display: flex;
   transition: all 1s ease;
-  border-bottom: 4px solid rgba(0, 0, 0, 0.712);
+  
 }
 
 .image {
@@ -371,3 +371,50 @@ body {
 }
 
 
+.element-line {
+  width: 80%; 
+  border: 2px solid #57565662; 
+  margin-top: 80px;
+  border-radius: 800%;
+  display: flex;
+  position: relative;
+  left: 10%;
+}
+
+.ct{
+  width: 40%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 28%;
+  top: -28px;
+  gap: 20px;
+}
+
+.sp-1,.sp-2,.sp-3{
+   border: 1px solid grey;
+  padding: 15px 25px 15px 25px;
+  background-color: #3a3939;
+  text-align: center;
+  color: white;
+  font-size: larger;
+  transition: all 0.3s linear;
+}
+
+span1:focus{
+  border:1px solid #a8741a;
+}
+
+span1:hover{
+  color: #a8741a;
+}
+
+span2:hover{
+  color: #a8741a;
+}
+
+span3:hover{
+  color: #a8741a;
+}
