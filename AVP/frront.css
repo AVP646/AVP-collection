@@ -435,14 +435,3 @@ span1:hover ,span2:hover ,span3:hover{
 
 
 /* this is a items code */
-
-.item-box{
-  width: 100vw;
-  max-width: 65vw;
-  height: 380px;
-  /* border: 1px solid red; */
-  margin-top: 140px;
-  overflow: hidden;
-  position: relative;
-  left: 18%;
-}
