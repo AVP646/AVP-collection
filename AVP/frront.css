@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-
+/* this is navabr  */
 
 .navbar-container{
   height: 70px;
@@ -72,7 +72,7 @@ body {
 }
 
 
-/* slider code with image and text */
+/* image  slider code with info  text */
 .slider-container {
   height: 400px;
   width: 400%;
