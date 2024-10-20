@@ -3,9 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: Lato;
-  list-style: none;
 }
 
 body {
@@ -15,22 +13,25 @@ body {
 
 
 
-.mc {
+.navbar-container{
   height: 70px;
-  width: 100vw;
+  width: 100%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.548);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 #logo {
   width: 65px;
+  cursor: pointer;
 }
 
 .menu {
   font-size: 25px;
   color: white;
+  cursor: pointer;
   margin-left: 20px;
 }
 
@@ -41,9 +42,9 @@ body {
 }
 
 .navbar-slider {
-  height: 300px;
-  width: 100vw;
-  background-color:rgba(36,36,36, 0.5);
+  height: 200px;
+  width: 100%;
+  background-color:#a8741a3d;
   text-align: center;
   backdrop-filter: blur(10px);
   transition: all .3s linear;
@@ -55,14 +56,14 @@ body {
 
 #menu li a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   text-transform: capitalize;
   word-spacing: 2px;
 }
 
 #menu li{
-  padding-top: 20px;
+  padding-top: 15px;
   font-family:lato ;
 }
 
@@ -70,212 +71,68 @@ body {
   border-bottom: 1px solid gold;
 }
 
-/* now creating image slider images movie information */
-
-.info {
-  height: 300px;
-  width: 400px;
-  z-index: 9;
-  transition: all 1s;
-  position: absolute;
-  top: 150px;
-  left: 170px;
-}
-
-#info {
-  color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.info button {
-  padding: 10px 15px;
-  width: 120px;
-  background-color: black;
-  color: white;
-  margin-left: 10px;
-  border: none;
-  border-radius: 20px;
-  margin: 0 0 0 5px;
-}
-
-#watch {
-  background: red;
-}
-
-.info2 {
-  height: 300px;
-  width: 400px;
-  position: absolute;
-  top: 150px;
-  left: 170px;
-  z-index: 9;
-  transition: all 1s;
-  opacity: 0;
-}
-
-.info2 button {
-  padding: 10px 15px;
-  width: 120px;
-  background-color: black;
-  color: white;
-  margin-left: 10px;
-  border: none;
-  border-radius: 20px;
-  margin: 0 0 0 5px;
-  cursor: pointer;
-}
-
-.info3 {
-  height: 300px;
-  width: 400px;
-  position: absolute;
-  top: 150px;
-  left: 170px;
-  z-index: 9;
-  transition: all 1s;
-  opacity: 0;
-}
-
-.info3 button {
-  padding: 10px 15px;
-  width: 120px;
-  background-color: black;
-  color: white;
-  margin-left: 10px;
-  border: none;
-  border-radius: 20px;
-  margin: 0 0 0 5px;
-}
-
-.info4 {
-  height: 300px;
-  width: 400px;
-  position: absolute;
-  top: 150px;
-  left: 170px;
-  z-index: 9;
-  transition: all 1s;
-  opacity: 0;
-}
-
-.info4 button {
-  padding: 10px 15px;
-  width: 120px;
-  background-color: black;
-  color: white;
-  margin-left: 10px;
-  border: none;
-  border-radius: 20px;
-  margin: 0 0 0 5px;
-}
-
-
 
 /* slider code with image and text */
-
-.container {
-  width: 100vw;
-  height: 40%;
+.slider-container {
+  height: 400px;
+  width: 400%;
 }
 
-.frame {
+.con2 {
+  height: 100%;
   width: 100%;
-  height:100%;
-  overflow: hidden;
-}
-
-.slider {
+  background: blue;
   display: flex;
-  transition: all 1s ease;
-  border-bottom: 4px solid rgba(0, 0, 0, 0.712);
+  transition: all 0.5s linear;
+  align-items: center;
 }
 
-.image {
+
+.a {
+  background: url(main-slider-images/1.jpg);
+}
+
+.b {
+  background: url(main-slider-images/2.jpg); 
+}
+
+.c {
+  background: url(main-slider-images/3.jpg);
+}
+
+.d {
+  background: url(main-slider-images/4.webp);
+}
+
+.box {
+  height: 100%;
   width: 100%;
-  object-fit: contain;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.arow {
-  color: white;
-  font-size: 1.5em;
-  cursor: pointer;
+
+.arrow-icons{
+  height:50px;
+  width:100%;
   position: absolute;
-  border: 1px solid rgba(29, 28, 28, 0.151);
-  padding: 10px;
-  border-radius: 50%;
-  background-color: red;
-}
-
-.left {
-  position: relatives;
-  left: 50px;
-  z-index: 99;
-  top: 230px;
-}
-
-.right {
-  right: 50px;
-  position: relatives;
-  top: 230px;
-  z-index: 12;
-}
-
-
-
-/* here is completed of image slider styling */
-
-/* box images */
-
-.box{
-  width: 100vw;
-  height: 300px;
+  top:250px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
- .box-con{
-  height:70%;
-  width:350px;
-  background:url(main-slider-images/box-2.jpg);
-  border-radius: 20px;
- }
-.box-1{
-  background: url(main-slider-images/box-1.avif);
-}
-.box-3{
-  background: url(main-slider-images/box-3.avif);
-}
 
-/* its collection styling */
-.head-coll{
-  height:30px;
-  width:100vw;
+.arow{
+  height:40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  color:  #3a3939;
+  cursor: pointer;
+  margin:0 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.548);
-  padding-top: 20px;
-}
-
-.collection-conn{
-  height:150px;
-  width:100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.col-con{
-  height:100px;
-  width:100px;
-  border:1px solid black;
-  border-radius: 50%;
-  margin:0 10px 0 10px;
-}
-
-.col-con:hover{
-  width:110px;
-  height:110px;
-  
 }
