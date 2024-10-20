@@ -81,7 +81,6 @@ body {
 .con2 {
   height: 100%;
   width: 100%;
-  background: blue;
   display: flex;
   transition: all 0.5s linear;
   align-items: center;
