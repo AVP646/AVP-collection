@@ -1,35 +1,37 @@
 
 let left = document.querySelector(".left");
+
 let right = document.querySelector(".right");
+
 let slider = document.querySelector(".slider");
+
 let image = document.querySelectorAll(".image");
 
 let no = 1;
 
 right.addEventListener("click", () => {
-    if (no < image.length) {
-        slider.style.transform = `translateX(-${no * 1250}px)`;
-        no++;
-    }
-    else {
-        slider.style.transform = `translateX(0px)`;
-        no = 1;
-    }
+  if (no < image.length) {
+    slider.style.transform = `translateX(-${no * 1250}px)`;
 
-})
+    no++;
+  } else {
+    slider.style.transform = `translateX(0px)`;
 
+    no = 1;
+  }
+});
 
 left.addEventListener("click", () => {
-    if (no > 1) {
-        slider.style.transform = `translateX(-${(no - 2) * 1264}px)`;
-        no--;
-    }
-    else {
-        slider.style.transform = `translateX(-${(image.length - 1) * 1264}px)`;
-        no = image.length;
-    }
+  if (no > 1) {
+    slider.style.transform = `translateX(-${(no - 2) * 1264}px)`;
 
-})
+    no--;
+  } else {
+    slider.style.transform = `translateX(-${(image.length - 1) * 1264}px)`;
+
+    no = image.length;
+  }
+});
 
 // here is the end of image slider function code
 

@@ -15,7 +15,7 @@ body {
   background-color: #3a3939;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
 }
 
 #logo {
@@ -49,7 +49,7 @@ body{
 .navbar-slider {
   height: 200px;
   width: 100vw;
-  background-color:#a8741a3d;
+  background-color: #a8741a3d;
   text-align: center;
   backdrop-filter: blur(10px);
   transition: all .3s linear;
@@ -68,12 +68,12 @@ body{
 
 }
 
-#menu li{
+#menu li {
   padding-top: 15px;
-  font-family:lato ;
+  font-family: lato;
 }
 
-.navbar-slider a:hover{
+.navbar-slider a:hover {
   border-bottom: 1px solid gold;
 }
 
@@ -94,14 +94,14 @@ body{
   overflow: hidden;
   position: absolute;
   top: 70px;
-  left: 16px;
+  /* left: 16px; */
   border-bottom: 4px solid rgba(0, 0, 0, 0.712);
 }
 
 .slider {
   display: flex;
   transition: all 1s ease;
-  
+
 }
 
 .image {
@@ -267,31 +267,31 @@ body{
 
 /* this is a image box */
 
-.box{
+.box {
   display: flex;
   gap: 30px;
- justify-content: center;
+  justify-content: center;
   position: relative;
-  left: 20px;
+  /* left: 20px; */
   margin-top: 90px;
 }
- 
-.box-image{
+
+.box-image {
   border-radius: 5px;
   -webkit-filter: brightness(60%);
-          filter: brightness(60%);
-         
+  filter: brightness(60%);
+
 }
 
 
 
-.box-1{
+.box-1 {
   overflow: hidden;
-  border-radius: 5px; 
-  
+  border-radius: 5px;
+
 }
 
-.box-text::before{
+.box-text::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -302,27 +302,27 @@ body{
 
 
 
-.box-2{
+.box-2 {
   overflow: hidden;
   border-radius: 5px;
 }
 
-.box-3{
+.box-3 {
   overflow: hidden;
   border-radius: 5px;
 }
 
 
 
-.box-text{
+.box-text {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   top: -155px;
   margin-top: -88px;
   line-height: 1.5rem;
@@ -332,21 +332,21 @@ body{
   padding-left: 20px;
   opacity: 0;
   -webkit-transform: translate(-20px);
-      -ms-transform: translate(-20px);
-          transform: translate(-20px);
+  -ms-transform: translate(-20px);
+  transform: translate(-20px);
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.4s linear;
 }
 
-.box-text:hover{
+.box-text:hover {
   -webkit-transform: translate(0);
-      -ms-transform: translate(0);
-          transform: translate(0);
+  -ms-transform: translate(0);
+  transform: translate(0);
   opacity: 1;
 }
 
-.text1{
+.text1 {
   color: white;
   font-size: 14px;
   font-family: 'Courier New', Courier, monospace;
@@ -355,7 +355,7 @@ body{
 }
 
 
-.text2{
+.text2 {
   color: #a8741a;
   font-size: 24px;
   left: 5px;
@@ -363,20 +363,20 @@ body{
   top: 130px;
 }
 
-.text3{
+.text3 {
   color: white;
   font-size: 14px;
   font-family: 'Courier New', Courier, monospace;
   position: relative;
   top: 150px;
-  
+
 }
 
 /* 3 catagory box with 1 horizontal border */
 
 .element-line {
-  width: 80%; 
-  border: 2px solid #57565662; 
+  width: 80%;
+  border: 2px solid #57565662;
   border-radius: 800%;
   display: flex;
   position: relative;
@@ -384,7 +384,7 @@ body{
   top: 150px;
 }
 
-.ct{
+.ct {
   width: 40%;
   height: 50px;
   display: flex;
@@ -396,7 +396,9 @@ body{
   overflow: hidden;
 }
 
-.sp-1,.sp-2,.sp-3{
+.sp-1,
+.sp-2,
+.sp-3 {
   border: 1px solid rgba(128, 128, 128, 0.329);
   padding: 15px 25px 15px 25px;
   background-color: #3a3939;
@@ -408,30 +410,29 @@ body{
 }
 
 
-.sp-1.changeColor{
-  border: 3px solid #a8741a;
-  color: #a8741a;
-  font-size: 25px;
-}
-.sp-2.changeColor{
+.sp-1.changeColor {
   border: 3px solid #a8741a;
   color: #a8741a;
   font-size: 25px;
 }
 
-.sp-3.changeColor{
+.sp-2.changeColor {
   border: 3px solid #a8741a;
   color: #a8741a;
   font-size: 25px;
 }
 
-span1,span2,span3{
+.sp-3.changeColor {
+  border: 3px solid #a8741a;
+  color: #a8741a;
+  font-size: 25px;
+}
+
+span1,
+span2,
+span3 {
   transition: all 0.3s linear;
+  cursor: pointer;
 }
-span1:hover ,span2:hover ,span3:hover{
-  color: #a8741a;
-}
-
-
 
 /* this is a items code */
