@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Lato;
+    color:white;
+}
+
+/* login page css */
+.container{
+    height:100vh;
+    width:100vw;
+    background: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con2{
+    height:70%;
+    width:40%;
+    border:1px solid rgba(167, 166, 166,0.5); 
+}
+.con2 a{
+    text-decoration: none;
+}
+#head{
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 30px 0 10px 15px;
+}
+
+#head2{
+    color:rgb(154, 151, 151);
+    margin:0 0 10px 15px;
+}
+
+
+label{
+    color:rgb(154, 151, 151);
+    margin:0 0 10px 15px;
+}
+
+.input{
+    height:30px;
+    width:350px;
+    margin:10px 0 10px 15px;
+    padding-left: 30px;
+    color:black;
+    font-size: 1em;
+}
+
+#forget{
+    color:rgb(154, 151, 151);
+    margin: 0 0 10px 15px;
+}
+
+#login{
+    width:150px;
+    height:36px;
+    color:#242424;
+    border:none;
+    margin:0 0 5px 15px;
+    cursor: pointer;
+    transition: all 1s ;
+}
+
+#head3{
+    color:rgb(154, 151, 151);
+    margin:0 0 0 15px;
+}
+
+#SignUp{
+    width:150px;
+    height:36px;
+    color:#242424;
+    border:none;
+    margin:10px 0 5px 15px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+button:hover{
+    background-color: rgb(90, 86, 86);
+}
+
+/* here its completd */
+
+
+/* now creating responsive  */
+@media (max-width: 1024px){
+    .con2{
+        height:50%;
+        width:50%;
+    }
+    .input{
+        width:400px;
+        height:40px;
+    }
+    #head{
+        font-size: 40px;
+    }
+    label{
+        font-size: 20px;
+    }
+}
+  @media (max-width: 1018px){
+    .con2{
+        height:450px;
+    }
+    .input{
+        width:350px;
+    }
+}
+
+@media (max-width: 814px){
+  .con2{
+    width:60%;
+  }
+  .input{
+    width:300px;
+  }
+}
+
+@media (max-width: 681px){
+  .con2{
+    width:70%;
+  }
+}
+
+@media (max-width: 583px){
+  .con2{
+    width:90%;
+  }
+}
+
+@media (max-width: 459px){
+  .con2{
+    width:95%;
+  }
+  .input{
+    width:250px;
+  }
+}
+
+
+@media (max-width: 430px){
+  #head{
+    font-size: 25px;
+  }
+}
+
+
+@media (max-width: 393px){
+  .con2{
+    width:95%;
+  }
+  .input{
+    width:250px;
+  }
+}
+
+@media (max-width: 337px){
+.input{
+    width:220px;
+}  
+#SignUp{
+    width:100px;
+}
+#login{
+    width:100px;
+}
+#head{
+    font-size: 20px;
+}
+}
+
+@media (max-width: 289px){
+  .con2{
+    height:400px;
+  }
+  .input{
+    width:190px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="con2">
+                <form action="frant-page.html" method="post">
+                    <h1 id="head">returning customer</h1>
+                    <p id="head2">I am a returning customer</p>
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="Email" id="email" name="email" class="input" required ><br>
+                    <label for="pass">Password</label><br>
+                    <input type="password" placeholder="Password" id="pass" name="pass" class="input" required><br>
+                    <a href="#"><p id="forget">Forget your password?</p></a>
+                    <button id="login">Login</button>
+                    <p id="head3">Dont have an account?</p>
+                </form>
+                <a href="sign_up.html"><button  id="SignUp">SignUp</button></a>
+        </div>
+    </div>
+</body>
+</html>
