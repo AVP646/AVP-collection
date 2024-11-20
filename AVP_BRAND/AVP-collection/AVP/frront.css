@@ -11,12 +11,13 @@ body {
   overflow-x: hidden;
 }
 
+
 /* this is navabr  */
-=======
+
 body {
   overflow-x: hidden;
 }
->>>>>>> 47acc633d5f0021cdc0b24e8d77cc51889675d75
+
 
 .navbar-container {
   height: 70px;
@@ -37,10 +38,8 @@ body {
   font-size: 25px;
   color: white;
   cursor: pointer;
-  margin-left: 20px;
-=======
+  /* margin-left: 20px; */
   margin-left: 30px;
->>>>>>> 47acc633d5f0021cdc0b24e8d77cc51889675d75
 }
 
 .login-i {
@@ -52,11 +51,8 @@ body {
 .navbar-slider {
   height: 200px;
   width: 100%;
-  background-color:#a8741a3d;
-=======
-  width: 100vw;
   background-color: #a8741a3d;
->>>>>>> 47acc633d5f0021cdc0b24e8d77cc51889675d75
+  width: 100vw;
   text-align: center;
   backdrop-filter: blur(10px);
   transition: all .3s linear;
@@ -151,7 +147,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-=======
+
 .frame {
   width: 100%;
   height: auto;
@@ -174,14 +170,15 @@ body {
 }
 
 .arow {
-  color: white;
-  font-size: 1.5em;
+  color: rgba(189, 176, 149, 0.767);
+  font-size: 1.2em;
+  font-weight: bold;
   cursor: pointer;
   position: absolute;
-  border: 1px solid rgba(29, 28, 28, 0.151);
+  border: 1px solid rgba(36, 36, 36, 0.03);
   padding: 10px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #a8741a3d;
   /* border-radius: 10px; */
 
 }
@@ -500,4 +497,42 @@ span3 {
 }
 
 /* this is a items code */
->>>>>>> 47acc633d5f0021cdc0b24e8d77cc51889675d75
+.gallery {
+  width: 900px;
+  display: flex;
+ overflow: hidden;
+ position: relative;
+ background-color: rgb(168, 116, 26,0.2);
+ box-shadow: inset  0px 0px 10px 10px rgba(34, 34, 33, 0.822);
+}
+
+
+.gallery div {
+  flex: none; 
+  display: grid;
+  grid-template-columns: auto auto auto; 
+  padding: 10px;
+  width: 100%;
+}
+
+.gallery div img {
+  width: 110%;
+  height: 300px;
+}
+
+.gallery-wrap{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#next,#back{
+padding: 20px;
+cursor: pointer;
+margin: 10px auto;
+box-shadow: inset  0px 0px 5px 3px rgba(34, 34, 33, 0.822);
+background-color: rgb(255, 255, 255);
+outline: none;
+border: none;
+font-size: large;
+}
